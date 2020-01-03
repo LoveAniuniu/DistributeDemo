@@ -18,6 +18,14 @@
 		<java.version>1.8</java.version>
 	</properties>
 
+	<modules>
+		<module>spring-boot-demo</module>
+		<module>thread-demo</module>
+		<module>order-service-demo</module>
+		<module>repo-service-demo</module>
+		<module>zookeeper-demo</module>
+	</modules>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
