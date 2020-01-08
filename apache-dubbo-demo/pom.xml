@@ -9,8 +9,8 @@
   <packaging>pom</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <modules>
-    <module>dubbo-client-demo</module>
-    <module>dubbo-server-demo</module>
+    <module>client-demo</module>
+    <module>provider-demo</module>
   </modules>
 
   <name>apache-dubbo-demo</name>

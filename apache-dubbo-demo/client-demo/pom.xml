@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.learning</groupId>
-  <artifactId>dubbo-client-demo</artifactId>
+  <artifactId>client-demo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
-  <name>dubbo-client-demo</name>
+  <name>client-demo</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -25,7 +25,26 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>org.apache.dubbo</groupId>
+      <artifactId>dubbo</artifactId>
+      <version>2.7.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.26</version>
+    </dependency>
+
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.2.3</version>
+    </dependency>
+
   </dependencies>
+
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->

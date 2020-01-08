@@ -18,8 +18,8 @@
 		<module>thread-demo</module>
 		<module>order-service-demo</module>
 		<module>repo-service-demo</module>
-		<module>apache-dubbo-demo</module>
-	</modules>
+        <module>apache-dubbo-demo</module>
+    </modules>
 
 	<build>
 		<plugins>
