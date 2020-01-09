@@ -10,12 +10,20 @@ http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
     <!-- 提供方应用信息，用于计算依赖关系 -->
     <dubbo:application name="practice-server" />
     <!-- 使用 multicast 广播注册中心暴露服务地址 -->
-    <dubbo:registry address="N/A" />
+    <dubbo:registry address="zookeeper://10.6.219.105:2181" />
     <!-- 用 dubbo 协议在 20880 端口暴露服务 -->
     <dubbo:protocol name="dubbo" port="20880" />
+
+    <!-- 用 webservice 协议在 8080 端口暴露服务 -->
+    <dubbo:protocol name="webservice" port="8080"  server="jetty"/>
+
+    <!-- 用 rest 协议在 8080 端口暴露服务 -->
+    <dubbo:protocol name="rest" port="8888"  server="jetty"/>
     <!-- 声明需要暴露的服务接口 -->
-    <dubbo:service interface="com.learning.LoginService"
-    ref="loginService" />
+    <dubbo:service interface="com.learning.IPayService" ref="payService"  protocol="webservice,dubbo"/>
+
+    <dubbo:service interface="com.learning.IPayRestService" ref="restPayService"  protocol="rest"/>
     <!-- 和本地 bean 一样实现服务 -->
-    <bean id="loginService" class="com.learning.LoginServiceImpl" />
+    <bean id="restPayService" class="com.learning.PayServiceRestImpl" />
+    <bean id="payService" class="com.learning.PayServiceImpl" />
 </beans>

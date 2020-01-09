@@ -4,12 +4,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class DubboDemo {
     public static void main( String[] args ){
-        ClassPathXmlApplicationContext
-                classPathXmlApplicationContext=
-                new ClassPathXmlApplicationContext(new
-                        String[]{"application.xml"});
-        /*LoginService loginService=(LoginService)classPathXmlApplicationContext.getBean
-                ("loginService");
-        System.out.println(loginService.login("admin","admin"));*/
+        ClassPathXmlApplicationContext classPathXmlApplicationContext= new ClassPathXmlApplicationContext(new String[]{"application.xml"});
+
+        IPayService payService = (IPayService) classPathXmlApplicationContext.getBean("payService");
+        String info = payService.pay("test");
+
+        System.out.println("hello world!"+info);
     }
 }

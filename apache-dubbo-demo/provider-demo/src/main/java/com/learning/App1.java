@@ -1,5 +1,6 @@
 package com.learning;
 
+import org.apache.dubbo.container.Main;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.IOException;
@@ -8,13 +9,9 @@ import java.io.IOException;
  * Hello world!
  *
  */
-public class App 
+public class App1
 {
     public static void main( String[] args ) throws IOException {
-        ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext(
-                new String[]{"META-INF/spring/application.xml"}
-        );
-
-        System.in.read();
+        Main.main(args);
     }
 }
