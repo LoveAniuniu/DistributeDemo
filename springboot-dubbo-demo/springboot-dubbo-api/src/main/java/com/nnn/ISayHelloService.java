@@ -1,5 +1,6 @@
+package com.nnn;
 
 public interface ISayHelloService {
 
-    public String sayHello();
+    String sayHello();
 }

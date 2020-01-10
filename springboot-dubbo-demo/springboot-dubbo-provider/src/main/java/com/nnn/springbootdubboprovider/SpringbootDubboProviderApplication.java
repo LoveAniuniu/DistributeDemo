@@ -1,13 +1,13 @@
-package com.nnn.springbootdubbodemo;
+package com.nnn.springbootdubboprovider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootDubboDemoApplication {
+public class SpringbootDubboProviderApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringbootDubboDemoApplication.class, args);
+        SpringApplication.run(SpringbootDubboProviderApplication.class, args);
     }
 
 }

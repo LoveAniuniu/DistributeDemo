@@ -1,10 +1,10 @@
-package com.nnn.springbootdubbodemo;
+package com.nnn.springbootdubboprovider;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringbootDubboDemoApplicationTests {
+class SpringbootDubboProviderApplicationTests {
 
     @Test
     void contextLoads() {
