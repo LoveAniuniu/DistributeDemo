@@ -20,6 +20,9 @@
 		<module>repo-service-demo</module>
         <module>apache-dubbo-demo</module>
 		<module>springboot-dubbo-demo</module>
+		<module>alibaba-demo</module>
+		<module>lock-demo</module>
+		<module>curator-demo</module>
     </modules>
 	<build>
 		<plugins>

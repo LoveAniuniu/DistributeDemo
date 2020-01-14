@@ -1,4 +1,12 @@
 package com.nnn.springbootdubboprovider;
 
-public class SayHelloImpl implements  {
+import com.nnn.ISayHelloService;
+import org.apache.dubbo.config.annotation.Service;
+
+@Service
+public class SayHelloImpl implements ISayHelloService {
+    @Override
+    public String sayHello() {
+        return null;
+    }
 }
