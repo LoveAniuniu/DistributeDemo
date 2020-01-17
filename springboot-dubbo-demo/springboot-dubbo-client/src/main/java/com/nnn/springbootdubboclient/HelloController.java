@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @Reference(loadbalance = "random")
+    @Reference(loadbalance = "random", mock = "com.nnn.springbootdubboclient.HelloServiceMock")
     private ISayHelloService sayHelloService;
 
     @GetMapping("/sayHello")
