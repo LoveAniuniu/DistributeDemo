@@ -23,6 +23,7 @@
 		<module>alibaba-demo</module>
 		<module>lock-demo</module>
 		<module>curator-demo</module>
+		<module>springboot-nacos-demo</module>
     </modules>
 	<build>
 		<plugins>
